@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контент-Машина - Презентация курса</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="presentation-container">
+        <!-- Navigation Controls -->
+        <div class="nav-controls">
+            <button class="nav-btn" id="prevBtn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            <div class="slide-counter">
+                <span id="currentSlide">1</span> / <span id="totalSlides">11</span>
+            </div>
+            <button class="nav-btn" id="nextBtn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Auto-advance controls -->
+        <div class="auto-controls">
+            <button class="control-btn" id="autoToggle">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                <span>Auto</span>
+            </button>
+        </div>
+
+        <!-- Slides Container -->
+        <div class="slides-container" id="slidesContainer">
+            <!-- Slide 1: Title -->
+            <div class="slide active" data-slide="1">
+                <div class="slide-content">
+                    <div class="slide-header">
+                        <span class="emoji">🎯</span>
+                        <span class="slide-label">Авторский онлайн-курс</span>
+                    </div>
+                    <h1 class="slide-title">Курс «Контент-Машина»</h1>
+                    <p class="slide-subtitle">Создавай контент как студия — без команды, с кайфом и ИИ</p>
+                    <div class="features-list">
+                        <div class="feature-item">🧩 1 месяц обучения</div>
+                        <div class="feature-item">📱 Telegram-формат</div>
+                        <div class="feature-item">⚙️ Работа на 90% через ассистентов и нейросети</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2: Problem -->
+            <div class="slide" data-slide="2">
+                <div class="slide-content">
+                    <div class="slide-header">
+                        <span class="emoji">🔥</span>
+                        <span class="slide-label">Главная боль</span>
+                    </div>
+                    <h1 class="slide-title">«Я хочу делать контент, но...»</h1>
+                    <ul class="problems-list">
+                        <li>нет времени на тексты, фото, монтаж</li>
+                        <li>нет команды (копирайтер, дизайнер, монтажёр)</li>
+                        <li>всё делаю вручную — выгораю</li>
+                        <li>сложно стабильно публиковать</li>
+                        <li>ИИ-инструменты есть, но не знаю как использовать</li>
+                    </ul>
+                    <div class="solution-box">
+                        <p>🙌 Решение — Контент-Машина: контент под ключ на ИИ + автоматизация</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: Audience -->
+            <div class="slide" data-slide="3">
+                <div class="slide-content">
+                    <div class="slide-header">
+                        <span class="emoji">🎯</span>
+                        <span class="slide-label">Целевая аудитория</span>
+                    </div>
+                    <h1 class="slide-title">Для кого курс</h1>
+                    <p class="slide-subtitle">Идеально подойдёт:</p>
+                    <ul class="audience-list">
+                        <li>Блогерам — для стабильного роста и охватов</li>
+                        <li>Экспертам и предпринимателям — для упаковки личного бренда</li>
+                        <li>Фрилансерам и самозанятым — чтобы делать контент клиентам</li>
+                        <li>Контент-менеджерам — для автоматизации проектов</li>
+                    </ul>
+                    <div class="level-info">
+                        <p>📌 Уровень — от новичка до уверенного практика</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4: Skills -->
+            <div class="slide" data-slide="4">
+                <div class="slide-content">
+                    <div class="slide-header">
+                        <span class="emoji">⚙️</span>
+                        <span class="slide-label">Навыки</span>
+                    </div>
+                    <h1 class="slide-title">Что ты будешь уметь</h1>
+                    <div class="skills-grid">
+                        <div class="skill-item">🧩 Контент под ключ: от идеи до публикации</div>
+                        <div class="skill-item">🤖 Генерация текстов и визуалов с помощью ИИ</div>
+                        <div class="skill-item">🎥 Запись и монтаж видео с телефона</div>
+                        <div class="skill-item">🖼️ Создание нейрофото и обложек</div>
+                        <div class="skill-item">🎙️ Обработка звука и монтаж на ноутбуке</div>
+                        <div class="skill-item">🧠 Автоматизация публикаций</div>
+                        <div class="skill-item">🛠️ Настройка AI-ассистентов под любые задачи</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5: Program -->
+            <div class="slide" data-slide="5">
+                <div class="slide-content">
+                    <div class="slide-header">
+                        <span class="emoji">📚</span>
+                        <span class="slide-label">Программа</span>
+                    </div>
+                    <h1 class="slide-title">Программа курса (1 месяц)</h1>
+                    <p class="slide-subtitle">8 модулей, каждый — шаг твоей Контент-Машины:</p>
+                    <div class="modules-list">
+                        <div class="module-item">1. Тексты и сценарии — генерация, адаптация, ИИ-ассистенты</div>
+                        <div class="module-item">2. Нейрофото на телефоне — создание и оформление</div>
+                        <div class="module-item">3. Запись видео — суфлёр, съёмка, оборудование</div>
+                        <div class="module-item">4. Мобильный монтаж — InShot, субтитры, музыка</div>
+                        <div class="module-item">5. Публикация — постинг, тайминг, обложки</div>
+                        <div class="module-item">6. Нейрофото на ПК — Recraft, Krea, DeepSwapper</div>
+                        <div class="module-item">7. Продвинутый звук и CapCut</div>
+                        <div class="module-item">8. Итоги + ассистент по созданию ассистентов</div>
+                    </div>
+                    <div class="bonus-info">
+                        <p>📌 + бонусы, инструкции и шаблоны промптов</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 6: Learning -->
+            <div class="slide" data-slide="6">
+                <div class="slide-content">
+                    <div class="slide-header">
+                        <span class="emoji">📝</span>
+                        <span class="slide-label">Обучение</span>
+                    </div>
+                    <h1 class="slide-title">Как устроено обучение</h1>
+                    <div class="learning-features">
+                        <div class="feature-item">🎥 Видеоуроки</div>
+                        <div class="feature-item">📄 Инструкции, шаблоны, промпты</div>
+                        <div class="feature-item">👥 Групповой чат</div>
+                        <div class="feature-item">✍️ Домашки с проверкой (в продвинутом и VIP тарифах)</div>
+                        <div class="feature-item">🔁 Пересдачи и комментарии</div>
+                        <div class="feature-item">📆 Прохождение — 1 урок в день, финал — за 1 месяц</div>
+                        <div class="feature-item">⏳ Доступ — вечный к материалам</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 7: Results -->
+            <div class="slide" data-slide="7">
+                <div class="slide-content">
+                    <div class="slide-header">
+                        <span class="emoji">🎓</span>
+                        <span class="slide-label">Результат</span>
+                    </div>
+                    <h1 class="slide-title">Результат и выпускной проект</h1>
+                    <p class="slide-subtitle">Ты сделаешь:</p>
+                    <div class="results-grid">
+                        <div class="result-item">3 поста</div>
+                        <div class="result-item">3 видео с субтитрами</div>
+                        <div class="result-item">3 нейрофото</div>
+                        <div class="result-item">контент-план</div>
+                        <div class="result-item">оформишь всё сам без команды</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <p>💼 Это — портфолио для клиента или старт для твоего блога</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 8: Reviews -->
+            <div class="slide" data-slide="8">
+                <div class="slide-content">
+                    <div class="slide-header">
+                        <span class="emoji">💬</span>
+                        <span class="slide-label">Отзывы</span>
+                    </div>
+                    <h1 class="slide-title">Отзывы учеников</h1>
+                    <div class="testimonials">
+                        <div class="testimonial">
+                            <p>«Я впервые начала публиковать каждый день — и это без выгорания!»</p>
+                        </div>
+                        <div class="testimonial">
+                            <p>«ИИ действительно сэкономил мне кучу времени. А бонус по нейрофото — огонь!»</p>
+                        </div>
+                        <div class="testimonial">
+                            <p>«Теперь я делаю контент и себе, и клиентам — без стресса, с кайфом»</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 9: Pricing -->
+            <div class="slide" data-slide="9">
+                <div class="slide-content">
+                    <div class="slide-header">
+                        <span class="emoji">💰</span>
+                        <span class="slide-label">Тарифы</span>
+                    </div>
+                    <h1 class="slide-title">Тарифы и цены</h1>
+                    <div class="pricing-grid">
+                        <div class="pricing-card">
+                            <h3>Базовый</h3>
+                            <div class="price">
+                                <span class="old-price">8 000 ₽</span>
+                                <span class="new-price">5 000 ₽</span>
+                            </div>
+                            <ul class="features">
+                                <li>Видеоуроки</li>
+                                <li>чат</li>
+                                <li>вечный доступ</li>
+                            </ul>
+                            <div class="offer">❗Первым 10 — 5 000 ₽</div>
+                        </div>
+                        <div class="pricing-card popular">
+                            <h3>Продвинутый</h3>
+                            <div class="price">
+                                <span class="old-price">15 000 ₽</span>
+                                <span class="new-price">10 000 ₽</span>
+                            </div>
+                            <ul class="features">
+                                <li>Всё из базового</li>
+                                <li>проверка домашних</li>
+                                <li>бонус-курс «Нейропикс»</li>
+                            </ul>
+                            <div class="offer">❗Первым 10 — 10 000 ₽</div>
+                        </div>
+                        <div class="pricing-card">
+                            <h3>VIP</h3>
+                            <div class="price">
+                                <span class="old-price">30 000 ₽</span>
+                                <span class="new-price">20 000 ₽</span>
+                            </div>
+                            <ul class="features">
+                                <li>Всё из продвинутого</li>
+                                <li>5 созвонов с преподавателем</li>
+                                <li>личная упаковка профиля</li>
+                            </ul>
+                            <div class="offer">❗Первым 10 — 20 000 ₽</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 10: Benefits -->
+            <div class="slide" data-slide="10">
+                <div class="slide-content">
+                    <div class="slide-header">
+                        <span class="emoji">🚀</span>
+                        <span class="slide-label">Преимущества</span>
+                    </div>
+                    <h1 class="slide-title">Почему «Контент-Машина» — это мощно</h1>
+                    <div class="benefits-grid">
+                        <div class="benefit-item">✅ Контент без выгорания</div>
+                        <div class="benefit-item">✅ 90% работы — ИИ</div>
+                        <div class="benefit-item">✅ Системный результат</div>
+                        <div class="benefit-item">✅ Без дизайнеров, копирайтеров и монтажёров</div>
+                        <div class="benefit-item">✅ Для себя или в продажу</div>
+                        <div class="benefit-item">✅ Экономия десятков часов</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 11: CTA -->
+            <div class="slide" data-slide="11">
+                <div class="slide-content">
+                    <div class="slide-header">
+                        <span class="emoji">🎯</span>
+                        <span class="slide-label">Призыв к действию</span>
+                    </div>
+                    <h1 class="slide-title">Готов включиться?</h1>
+                    <div class="cta-content">
+                        <div class="cta-action">
+                            <p>🟢 Записывайся — и собирай свою Контент-Машину</p>
+                        </div>
+                        <div class="cta-contact">
+                            <p>📩 Остались вопросы? Напиши в Telegram <a href="https://t.me/tolgsky" target="_blank">@tolgsky</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Progress Indicators -->
+        <div class="progress-indicators">
+            <div class="progress-dots">
+                <div class="dot active" data-slide="1"></div>
+                <div class="dot" data-slide="2"></div>
+                <div class="dot" data-slide="3"></div>
+                <div class="dot" data-slide="4"></div>
+                <div class="dot" data-slide="5"></div>
+                <div class="dot" data-slide="6"></div>
+                <div class="dot" data-slide="7"></div>
+                <div class="dot" data-slide="8"></div>
+                <div class="dot" data-slide="9"></div>
+                <div class="dot" data-slide="10"></div>
+                <div class="dot" data-slide="11"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
